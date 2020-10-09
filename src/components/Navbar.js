@@ -7,6 +7,7 @@ export default class Navbar extends Component {
     state = {
         isOpen:false
     }
+    // trigger onlcik event on hamburger and toggle navbar
     handleToggle = () => {
         this.setState({isOpen: !this.state.isOpen})
     }
