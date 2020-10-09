@@ -1,0 +1,48 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-header {
+    display: flex;
+}
+
+
+/* hamburger toggles on click */
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    transition: var(--mainTransition);
+}
+
+.nav-links {
+    display: block;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+}
+
+.nav-icon {
+    border: none;
+    color: rgb(148, 110, 13);
+    font-size: 1.5rem;
+}
+
+
+/* hamburger toggles on click */
+
+.show-nav {
+    height: 10em;
+}
+
+@media (min-width: 720px) {
+    .nav-btn {
+        display: none;
+    }
+}
