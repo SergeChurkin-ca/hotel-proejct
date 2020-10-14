@@ -1,12 +1,35 @@
+/* ******* NAVBAR **************** */
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    width: 100%;
+    background-color: rgb(210, 230, 243);
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-header {
     display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.nav-center {
+    width: 100vw;
+}
+
+.logo {
+    width: 30vw;
+}
+
+@media (min-width: 721px) {
+    .nav-links {
+        display: inline;
+        overflow: auto;
+    }
 }
 
 
@@ -15,17 +38,26 @@
 .nav-links {
     height: 0;
     overflow: hidden;
-    list-style-type: none;
     transition: var(--mainTransition);
+    list-style: none;
 }
 
-.nav-links {
-    display: block;
+.nav-links li {
+    display: inline-flex;
+}
+
+.nav-links a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(148, 110, 13)
 }
 
 .nav-btn {
     background: transparent;
     border: none;
+    position: absolute;
+    right: 0;
+    top: 1em;
 }
 
 .nav-icon {
@@ -38,11 +70,36 @@
 /* hamburger toggles on click */
 
 .show-nav {
-    height: 10em;
+    height: 4em;
+    z-index: 1;
 }
 
 @media (min-width: 720px) {
     .nav-btn {
         display: none;
     }
+}
+
+
+/* ******** HERO IMG *****************/
+
+.defaultHero {
+    background-image: url("./images/heroimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.roomsHero {
+    background-image: url("./images/room-1.jpeg");
+    /* height: 100vh; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
