@@ -103,3 +103,31 @@
     background-size: cover;
     height: 100vh;
 }
+
+
+/* ******** BANNER *****************/
+
+.banner {
+    background: rgb(81, 170, 170, 0.9);
+    z-index: 1;
+    display: inline-flex;
+    margin: 30% 20% 0 20%;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 1%;
+}
+
+
+/* ******** BUTTON *****************/
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: darkgoldenrod;
+    border: none;
+    color: black;
+    padding: 0.5em 1em;
+}
