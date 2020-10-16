@@ -3,14 +3,15 @@ import ReactDOM from "react-dom";
 // import './index.css';
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import {RoomProvider} from './context';
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <Router>
-    <React.StrictMode>
+  <RoomProvider>
+    <Router>
       <App />
-    </React.StrictMode>
-  </Router>,
+    </Router>
+  </RoomProvider>,
   document.getElementById("root")
 );
 

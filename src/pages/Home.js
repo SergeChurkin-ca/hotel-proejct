@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import Services from '../components/Services';
+import FeaturedRooms from '../components/FeaturedRooms';
 
 export default function Home() {
   return (
+    <React.Fragment>
   <Hero>
     <Banner title="luxury rooms" subtitle="deluxe room $199">
       <Link to='/rooms' className='btn-primary'>
@@ -12,6 +15,9 @@ export default function Home() {
       </Link>
     </Banner>
   </Hero>
+  <Services/>
+  <FeaturedRooms/>
+  </React.Fragment>
     )
 };
 
