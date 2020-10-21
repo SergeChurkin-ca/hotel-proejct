@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import defaultImg from '../images/room-3.jpeg';
 
 const StyledHero = styled.header `
-    background-image: url(${props => props.img});
+    background-image: url(${props => props.img? props.img: defaultImg});
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;

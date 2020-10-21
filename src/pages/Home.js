@@ -7,17 +7,17 @@ import FeaturedRooms from '../components/FeaturedRooms';
 
 export default function Home() {
   return (
-    <React.Fragment>
-  <Hero>
-    <Banner title="luxury rooms" subtitle="deluxe room $199">
-      <Link to='/rooms' className='btn-primary'>
-        our rooms
-      </Link>
-    </Banner>
-  </Hero>
-  <Services/>
-  <FeaturedRooms/>
-  </React.Fragment>
+      <React.Fragment>
+    <Hero>
+      <Banner title="luxury rooms" subtitle="deluxe room $199">
+        <Link to='/rooms' className='btn-primary'>
+          our rooms
+        </Link>
+      </Banner>
+    </Hero>
+    <Services/>
+    <FeaturedRooms/>
+    </React.Fragment>
     )
 };
 
