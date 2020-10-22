@@ -9,15 +9,15 @@ class RoomProvider extends Component {
         sortedRooms:[],
         featuredRooms: [],
         loading: true,
-            type: 'all',
-            capacity: 1,
-            price: 0,
-            minPrice: 0,
-            maxPrice: 0,
-            minSize: 0,
-            maxSize: 0,
-            breakfast: false,
-            pets: false
+        type: 'all',
+        capacity: 1,
+        price: 0,
+        minPrice: 0,
+        maxPrice: 0,
+        minSize: 0,
+        maxSize: 0,
+        breakfast: false,
+        pets: false
     };
     //  getData
 
@@ -55,10 +55,13 @@ getRoom = (slug) =>{
 }
 
     handleChange = event => {
-        const type = event.target.type;
+        const target = event.target
+        const value = event.type === 'checkbox' ?target.checked:target.value
+   
         const name = event.target.name;
-        const value = event.target.value;
-        console.log(`this is ${type}, this is name :${name}, this is value: ${value}`);
+        this.setState({
+            [name]:value
+        })
     }
     
     filterRooms = () => {

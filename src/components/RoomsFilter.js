@@ -13,7 +13,7 @@ export default function RoomsFilter({rooms}) {
     const { handleChange, type, capacity, price, minPRice, maxPrice, minSize, maxSize, breakfast, pets } = context;
 
     let types = getUnique(rooms, 'type');
-    types = ['all',...type];
+    types = ["all",...types];
     // map to jsx
     types = types.map((item, index) => {
         return <option value={item} key={index}>{item}</option>
