@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react';
 import { RoomContext } from '../context';
-import Title  from '../components/Title';
+import Title from '../components/Title';
 
 // get unque values to put to dropdown menu
 const getUnique = (items, value) => {

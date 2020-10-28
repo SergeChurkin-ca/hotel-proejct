@@ -7,16 +7,14 @@ import Loading from './Loading';
 function RoomContainer({ context }) {
     const { loading, sortedRooms, rooms } = context;
     if (loading) {
-        return ( <
-            Loading / >
-        )
+        return ( < Loading /> )
     }
     return (
-            <>
-            <RoomsFilter rooms={rooms} />
-            <RoomList rooms={sortedRooms}/>
-            </>
-    );
+        <>
+        <RoomsFilter rooms = {rooms}/>
+        <RoomList rooms={sortedRooms}/>
+        </>
+    )
 }
 
 

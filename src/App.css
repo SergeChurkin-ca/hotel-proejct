@@ -1,225 +1,217 @@
-/* ******* NAVBAR **************** */
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    /* width: 100%; */
-    background-color: rgb(210, 230, 243);
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-header {
-    display: flex;
-    justify-content: space-between;
-    /* width: 100vw; */
-}
-
-.nav-center {
-    width: 100vw;
-    display: inline;
-}
-
-.logo {
-    width: 30vw;
-}
-
-@media (min-width: 721px) {
-    .nav-links {
+    /* ******* NAVBAR **************** */
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* width: 100%; */
+        background-color: rgb(210, 230, 243);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        /* width: 100vw; */
+    }
+    
+    .nav-center {
+        width: 100vw;
         display: inline;
-        overflow: auto;
     }
-}
-
-
-/* hamburger toggles on click */
-
-.nav-links {
-    height: 0;
-    overflow: hidden;
-    transition: var(--mainTransition);
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline-flex;
-}
-
-.nav-links a {
-    list-style: none;
-    text-decoration: none;
-    color: rgb(148, 110, 13)
-}
-
-.nav-btn {
-    background: transparent;
-    border: none;
-    position: absolute;
-    right: 0;
-    top: 1em;
-}
-
-.nav-icon {
-    border: none;
-    color: rgb(148, 110, 13);
-    font-size: 1.5rem;
-}
-
-
-/* hamburger toggles on click */
-
-.show-nav {
-    height: 4em;
-    z-index: 1;
-}
-
-@media (min-width: 720px) {
+    
+    .logo {
+        width: 30vw;
+    }
+    
+    @media (min-width: 721px) {
+        .nav-links {
+            display: inline;
+            overflow: auto;
+        }
+    }
+    /* hamburger toggles on click */
+    
+    .nav-links {
+        height: 0;
+        overflow: hidden;
+        transition: var(--mainTransition);
+        list-style: none;
+    }
+    
+    .nav-links li {
+        display: inline-flex;
+    }
+    
+    .nav-links a {
+        list-style: none;
+        text-decoration: none;
+        color: rgb(148, 110, 13)
+    }
+    
     .nav-btn {
-        display: none;
+        background: transparent;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 1em;
     }
-}
-
-
-/* ******** HERO IMG *****************/
-
-.defaultHero {
-    background-image: url("./images/heroimg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 60vh;
-    margin: 0 auto;
-    width: 97%;
-}
-
-.roomsHero {}
-
-
-/* ******** BANNER *****************/
-
-.banner {
-    background: rgb(81, 170, 170, 0.85);
-    z-index: 1;
-    display: inline-flex;
-    margin: 15% 20% 0 20%;
-    width: 60%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 1%;
-}
-
-
-/* ******** BUTTON *****************/
-
-.btn-primary {
-    display: inline-block;
-    text-decoration: none;
-    background-color: darkgoldenrod;
-    border: none;
-    color: black;
-    padding: 0.5em 1em;
-}
-
-
-/* ******** LOADING *****************/
-
-.loading {
-    text-transform: capitalize;
-    text-align: center;
-    margin-top: 3em;
-}
-
-
-/* ******** TITLE *****************/
-
-.section-title {
-    align-items: center;
-    text-align: center;
-    height: 5em;
-    text-transform: capitalize;
-    font-size: 2rem;
-    width: 100%;
-}
-
-.section-title div {
-    width: 10em;
-    height: 5px;
-    background: goldenrod;
-    margin: 0 auto;
-}
-
-
-/* ******** SECTION *****************/
-
-.services-center {
-    width: 80%;
-    margin: 1% 10% 0 10%;
-    display: grid;
-    background: silver;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex: 1 0 200px;
-}
-
-.services-center h6 {
-    text-transform: capitalize;
-    font-size: 1.5rem;
-}
-
-.services-center span {
-    font-size: 1.5rem;
-}
-
-article {
-    padding: 1em 2em;
-    margin: 0 auto;
-    width: calc((100% / 4) - 8em);
-    min-width: 150px;
-}
-
-
-/* ******** ROOMS *****************/
-
-.room {
-    border: solid 3px gray;
-    width: auto;
-    margin: 0 10%;
-    padding: 0;
-}
-
-.room img {
-    width: 100%;
-    height: auto;
-}
-
-.featured-rooms {
-    padding: 5rem 0;
-}
-
-.featured-rooms-center {
-    width: 80vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    grid-row-gap: 2rem;
-    grid-column-gap: 40px;
-}
-
-
-/* ******** TEMPORARY MARKUP STYLING TO REMOVE LATTER *****************/
-
-h3,
-.title {
-    margin-top: 5em;
-}
-
-.form-control {
-    width: 15em;
-    padding: 0 1em;
-    margin: 0 1em;
-}
+    
+    .nav-icon {
+        border: none;
+        color: rgb(148, 110, 13);
+        font-size: 1.5rem;
+    }
+    /* hamburger toggles on click */
+    
+    .show-nav {
+        height: 4em;
+        z-index: 1;
+    }
+    
+    @media (min-width: 720px) {
+        .nav-btn {
+            display: none;
+        }
+    }
+    /* ******** HERO IMG *****************/
+    
+    .defaultHero {
+        background-image: url("./images/heroimg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 60vh;
+        margin: 0 auto;
+        width: 97%;
+    }
+    
+    .roomsHero {}
+    /* ******** BANNER *****************/
+    
+    .banner {
+        background: rgb(81, 170, 170, 0.85);
+        z-index: 1;
+        display: inline-flex;
+        margin: 15% 20% 0 20%;
+        width: 60%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+    /* ******** BUTTON *****************/
+    
+    .btn-primary {
+        display: inline-block;
+        text-decoration: none;
+        background-color: darkgoldenrod;
+        border: none;
+        color: black;
+        padding: 0.5em 1em;
+    }
+    /* ******** LOADING *****************/
+    
+    .loading {
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: 3em;
+    }
+    /* ******** TITLE *****************/
+    
+    .section-title {
+        align-items: center;
+        text-align: center;
+        height: 5em;
+        text-transform: capitalize;
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .section-title div {
+        width: 10em;
+        height: 5px;
+        background: goldenrod;
+        margin: 0 auto;
+    }
+    /* ******** SECTION *****************/
+    
+    .services-center {
+        width: 80%;
+        margin: 1% 10% 0 10%;
+        display: grid;
+        background: silver;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex: 1 0 200px;
+    }
+    
+    .services-center h6 {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
+    
+    .services-center span {
+        font-size: 1.5rem;
+    }
+    
+    article {
+        padding: 1em 2em;
+        margin: 0 auto;
+        width: calc((100% / 4) - 8em);
+        min-width: 150px;
+    }
+    /* ******** ROOMS *****************/
+    
+    .room {
+        border: solid 3px gray;
+        width: 10em;
+        /* margin: 0 auto; */
+        padding: 1em;
+    }
+    
+    .room img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .featured-rooms {
+        padding: 5rem 0;
+    }
+    
+    .featured-rooms-center {
+        width: 80vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-row-gap: 2rem;
+        grid-column-gap: 40px;
+    }
+    /* ******** TEMPORARY MARKUP STYLING TO REMOVE LATTER *****************/
+    
+    h3,
+    .title {
+        margin-top: 5em;
+    }
+    
+    .form-control {
+        width: 15em;
+        padding: 0 1em;
+        margin: 0 1em;
+    }
+    
+    .rooms-list {
+        padding: 5em 0;
+    }
+    
+    .rooms-list-center {
+        margin: 0 auto;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        grid-row-gap: 0.5em;
+    }
